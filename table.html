@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <style>
+    .page-link {
+      cursor: pointer;
+    }    
+  </style>
+  <title>Table Pagination</title>
+</head>
+<body>
+    <div class="container-md col-xl-10">
+      <h1 class="text-center mt-3">Table Pagination</h1>
+    <table id="data-table" class="table table-dark table-hover table-responsive mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Column 1</th>
+          <th scope="col">Column 2</th>
+          <th scope="col">Column 3</th>
+          <th scope="col">Column 4</th>
+        </tr>
+      </thead>
+
+      <!-- Data Table -->
+      <tbody id="parent-table">
+        <tr class="data-row">
+          <th scope="row">Hard Row 1</th>
+          <td>
+            <div>R1-C1</div>
+          </td>
+          <td>
+            <div>R1-C2</div>
+          </td>
+          <td>
+            <div>R1-C3</div>
+          </td>
+          <td>
+            <div>R1-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 2</th>
+          <td>
+            <div>R2-C1</div>
+          </td>
+          <td>
+            <div>R2-C2</div>
+          </td>
+          <td>
+            <div>R2-C3</div>
+          </td>
+          <td>
+            <div>R2-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 3</th>
+          <td>
+            <div>R3-C1</div>
+          </td>
+          <td>
+            <div>R3-C2</div>
+          </td>
+          <td>
+            <div>R3-C3</div>
+          </td>
+          <td>
+            <div>R3-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 4</th>
+          <td>
+            <div>R4-C1</div>
+          </td>
+          <td>
+            <div>R4-C2</div>
+          </td>
+          <td>
+            <div>R4-C3</div>
+          </td>
+          <td>
+            <div>R4-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 5</th>
+          <td>
+            <div>R5-C1</div>
+          </td>
+          <td>
+            <div>R5-C2</div>
+          </td>
+          <td>
+            <div>R5-C3</div>
+          </td>
+          <td>
+            <div>R5-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 6</th>
+          <td>
+            <div>R6-C1</div>
+          </td>
+          <td>
+            <div>R6-C2</div>
+          </td>
+          <td>
+            <div>R6-C3</div>
+          </td>
+          <td>
+            <div>R6-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 7</th>
+          <td>
+            <div>R7-C1</div>
+          </td>
+          <td>
+            <div>R7-C2</div>
+          </td>
+          <td>
+            <div>R7-C3</div>
+          </td>
+          <td>
+            <div>R7-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 8</th>
+          <td>
+            <div>R8-C1</div>
+          </td>
+          <td>
+            <div>R8-C2</div>
+          </td>
+          <td>
+            <div>R8-C3</div>
+          </td>
+          <td>
+            <div>R8-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 9</th>
+          <td>
+            <div>R9-C1</div>
+          </td>
+          <td>
+            <div>R9-C2</div>
+          </td>
+          <td>
+            <div>R9-C3</div>
+          </td>
+          <td>
+            <div>R9-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 10</th>
+          <td>
+            <div>R10-C1</div>
+          </td>
+          <td>
+            <div>R10-C2</div>
+          </td>
+          <td>
+            <div>R10-C3</div>
+          </td>
+          <td>
+            <div>R10-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 11</th>
+          <td>
+            <div>R11-C1</div>
+          </td>
+          <td>
+            <div>R11-C2</div>
+          </td>
+          <td>
+            <div>R11-C3</div>
+          </td>
+          <td>
+            <div>R11-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 12</th>
+          <td>
+            <div>R12-C1</div>
+          </td>
+          <td>
+            <div>R12-C2</div>
+          </td>
+          <td>
+            <div>R12-C3</div>
+          </td>
+          <td>
+            <div>R12-C4</div>
+          </td>
+        </tr>
+        <tr class="data-row">
+          <th scope="row">Hard Row 13</th>
+          <td>
+            <div>R13-C1</div>
+          </td>
+          <td>
+            <div>R13-C2</div>
+          </td>
+          <td>
+            <div>R13-C3</div>
+          </td>
+          <td>
+            <div>R13-C4</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Pagination Navigation -->
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li id="previous" class="page-item">
+          <a class="page-link">Previous</a>
+        </li>
+        <li id="next" class="page-item">
+          <a class="page-link">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End data Prices Table Section -->
+  <script src="/table-pagination.js"></script>
+  <script>
+    const pagination = new Pagination({
+      elementID: 'parent-table', 
+      RowNumber: 5,
+      maxButtons: 4, 
+      dataUrl: 'table-data.html'})
+    
+  </script>
+</body>
+</html>
